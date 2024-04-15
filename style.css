@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-style: italic;
+}
+
+body {
+    margin: 48px;
+    font-family: 'Raleway';
+}
+
+h1 {
+    text-align: center;
+}
+
+#albumContainer {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo {
+    height: 240px;
+    margin: 10px;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.blackBackground {
+    background-color: rgb(37, 37, 37);
+    inset: 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.photoView {
+    height: 628px;
+    object-fit: cover;
+    position: fixed;
+    z-index: 3;
+}
+
+.closeButton {
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 16px;
+    object-fit: cover;
+    background-color: rgb(64, 64, 64);
+}
+
+#closeButton {
+    border-radius: 10px;
+    height: 64px;
+    position: absolute;
+    padding: 0px;
+    top: 64px;
+    right: 64px;
+    background-color: rgb(64, 64, 64);
+    border: none;
+}
